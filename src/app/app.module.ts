@@ -12,6 +12,7 @@ import { NavComponent } from './@components/nav/nav.component';
 import { FooterComponent } from './@components/footer/footer.component';
 import { BadgeComponent } from './@components/badge/badge.component';
 import { SocialIconsComponent } from './@components/social-icons/social-icons.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,12 @@ import { SocialIconsComponent } from './@components/social-icons/social-icons.co
     BadgeComponent,
     SocialIconsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
